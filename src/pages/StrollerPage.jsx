@@ -6,7 +6,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import StrollerGrid from "../components/StrollerGrid";
 
 const StrollerPage = () => {
-  const [selectedFilter, setSelectedFilter] = useState(null);
    useEffect(() => {
     document.title = 'EarthBubs | Products | Stroller';
   }, []);
@@ -54,5 +53,6 @@ const StrollerPage = () => {
 };
 
 export default StrollerPage;
+
 
 
