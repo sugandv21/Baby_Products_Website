@@ -41,7 +41,6 @@ const OrderComplete = () => {
       </div>
 
       <div className="flex flex-col items-center justify-center min-h-screen bg-white text-center px-4">
-        {/* Image */}
         <img
           ref={imageRef}
           src={orderImage}
@@ -49,7 +48,6 @@ const OrderComplete = () => {
           className="w-[500px] h-[500px] object-contain"
         />
 
-        {/* Text */}
         <p className="mt-1 text-lg text-gray-600">
           Order ID: <strong>OCD1232</strong>
         </p>
@@ -65,3 +63,4 @@ const OrderComplete = () => {
 };
 
 export default OrderComplete;
+
