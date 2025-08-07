@@ -6,6 +6,10 @@ import GirlsFashion from "../components/GirlsFashion";
 
 const GirlsFashionPage = () => {
   const [selectedFilter, setSelectedFilter] = useState(null);
+   useEffect(() => {
+    document.title = 'EarthBubs | Products | GirlsFashion';
+  }, []);
+  const [selectedFilter, setSelectedFilter] = useState(null);
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto">
@@ -49,4 +53,5 @@ const GirlsFashionPage = () => {
 };
 
 export default GirlsFashionPage;
+
 
