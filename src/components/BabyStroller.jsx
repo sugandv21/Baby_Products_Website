@@ -13,8 +13,7 @@ const BabyStroller = () => {
       </h2>
 
       <div className="flex flex-col lg:flex-row items-start justify-between gap-20 max-w-8xl mx-auto my-20">
-        
-        {/* Image and label */}
+      
         <div className="w-full lg:w-1/2">
           <img
             src={stroll} 
@@ -23,7 +22,6 @@ const BabyStroller = () => {
           />
         </div>
 
-        {/* Text content */}
         <div className="w-full lg:w-1/2 lg:text-left">
           <h3 className="text-5xl font-bold text-gray-900 mb-4">Baby Stroller</h3>
           <p className="text-gray-700 mb-6 leading-relaxed text-2xl">
@@ -45,3 +43,4 @@ const BabyStroller = () => {
 };
 
 export default BabyStroller;
+
