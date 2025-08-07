@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import babyImg from '../assets/images/Baby-img.png';
@@ -156,3 +156,4 @@ const Signup = () => {
 };
 
 export default Signup;
+
