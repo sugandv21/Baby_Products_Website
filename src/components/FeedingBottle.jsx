@@ -6,8 +6,6 @@ const FeedingBottle = () => {
   return (
    <section className="flex flex-col lg:flex-row items-start justify-between px-6 py-10 lg:py-20 bg-white max-w-7xl mx-auto gap-y-10 lg:gap-x-20">
 
-      
-      {/* Text Section */}
       <div className="w-full lg:w-1/2 text-center lg:text-left">
         <h1 className="text-5xl font-bold text-gray-900 mb-6">Feeding Bottle</h1>
         <p className="text-2xl text-gray-700 mb-6">
@@ -24,7 +22,6 @@ const FeedingBottle = () => {
 </Link>
       </div>
 
-      {/* Image Section */}
       <div className="w-full lg:w-1/2 mt-10 lg:mt-0">
         <img
           src={feedingBottleImg}
@@ -37,3 +34,4 @@ const FeedingBottle = () => {
 };
 
 export default FeedingBottle;
+
