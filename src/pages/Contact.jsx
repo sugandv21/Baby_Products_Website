@@ -1,10 +1,12 @@
-
-import React from "react";
+import React, { useEffect } from "react";
 import ContactImg from "../assets/images/contact.png";
 import { Link } from "react-router-dom";
 
 
 const Contact = () => {
+     useEffect(() => {
+    document.title = 'EarthBubs | Contact';
+  }, []);
   return (
     <section className="flex flex-col md:flex-row items-center justify-around gap-10 px-6 py-12 md:px-16 bg-[#f3f3f3]">
       <div className="text-base sm:text-lg font-medium flex flex-wrap items-center gap-1">
@@ -105,3 +107,4 @@ const Contact = () => {
 };
 
 export default Contact;
+
