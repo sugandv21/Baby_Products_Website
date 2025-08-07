@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import FilterMenu from "../components/FilterMenu";
 import OffersGrid from "../components/OffersGrid";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 const Offers = () => {
+     useEffect(() => {
+    document.title = 'EarthBubs | Offers';
+  }, []);
   const [selectedFilter, setSelectedFilter] = useState(null);
 
   return (
@@ -49,4 +52,5 @@ const Offers = () => {
 };
 
 export default Offers;
+
 
