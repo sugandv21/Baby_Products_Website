@@ -4,6 +4,9 @@ import { FaEye, FaEyeSlash } from 'react-icons/fa';
 import babyImg from '../assets/images/Baby-img.png';
 
 const Signup = () => {
+   useEffect(() => {
+    document.title = 'EarthBubs | Sign Up';
+  }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',
