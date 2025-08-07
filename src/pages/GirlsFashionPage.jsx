@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect  } from "react";
 import FilterMenu from "../components/FilterMenu";
 import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import GirlsFashion from "../components/GirlsFashion";
 
 const GirlsFashionPage = () => {
-  const [selectedFilter, setSelectedFilter] = useState(null);
    useEffect(() => {
     document.title = 'EarthBubs | Products | GirlsFashion';
   }, []);
@@ -53,5 +52,6 @@ const GirlsFashionPage = () => {
 };
 
 export default GirlsFashionPage;
+
 
 
