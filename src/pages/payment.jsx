@@ -5,7 +5,6 @@ import { CartContext } from "../context/CartContext";
 import paymentOptions from "../assets/images/payment.png"; // image with GPay, Apple Pay etc.
 
 const Payment = () => {
-  const [selectedFilter, setSelectedFilter] = useState(null);
    useEffect(() => {
     document.title = 'EarthBubs | Payment';
   }, []);
