@@ -178,7 +178,7 @@ const navLinkClass = ({ isActive }) =>
       <div className="container mx-auto flex justify-space-between items-center px-4 py-3">
 
         {/* Logo */}
-        <div className="flex gap-2 ml-0 lg:-ml-20">
+        <div className="flex gap-2 ">
           <Link to="/" className="flex items-center gap-1">
             <img src={logo} className="h-8" alt="Logo" />
             <span className="text-sky-500 text-2xl font-bold">EarthBubs</span>
@@ -243,7 +243,7 @@ const navLinkClass = ({ isActive }) =>
 
           </nav>
 
-          <div className="flex items-center gap-5 -mr-20">
+          <div className="flex items-center gap-5">
              <div className="relative w-64">
       <input
         type="text"
@@ -516,3 +516,4 @@ const navLinkClass = ({ isActive }) =>
 };
 
 export default Navbar;
+
