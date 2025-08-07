@@ -4,13 +4,10 @@ import girlsfasData  from "../data/girlsfasData";
 
 const GirlsFashion = ({ selectedFilter }) => {
   const getFilteredProducts = () => {
-    // Optionally limit to Pampers IDs (e.g., 7–12)
     const pampersOnly = girlsfasData .filter((p) => p.id >= 301 && p.id <= 306);
 
-    // No filter selected
     if (!selectedFilter) return pampersOnly;
 
-    // Filter by Price range
     if (selectedFilter.includes("Price")) {
       const numbers = selectedFilter.match(/\d+/g);
       if (numbers && numbers.length === 2) {
@@ -20,17 +17,14 @@ const GirlsFashion = ({ selectedFilter }) => {
       return pampersOnly;
     }
 
-    // Filter by Free Shipping (example logic)
     if (selectedFilter.includes("Free Shipping")) {
       return pampersOnly.slice(0, 6);
     }
 
-    // Filter by Discounts
     if (selectedFilter.includes("Discounts")) {
       return pampersOnly.filter((p) => p.mrp > p.price);
     }
 
-    // Default return
     return pampersOnly;
   };
 
@@ -50,3 +44,4 @@ const GirlsFashion = ({ selectedFilter }) => {
 };
 
 export default GirlsFashion;
+
