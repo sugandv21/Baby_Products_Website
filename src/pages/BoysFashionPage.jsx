@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect} from "react";
 import FilterMenu from "../components/FilterMenu";
 import { Link } from "react-router-dom";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
@@ -51,5 +51,6 @@ const BoysFashionPage = () => {
 };
 
 export default BoysFashionPage;
+
 
 
