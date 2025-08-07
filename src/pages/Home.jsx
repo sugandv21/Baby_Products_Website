@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from "react";
 import FeaturedCategories from '../components/FeaturedCategories';
 import banner from '../assets/images/home_banner.jpg';
 import TrustSection from '../components/TrustSection';
@@ -10,6 +10,9 @@ import Pampers from '../components/Pampers';
 import Testimonials from '../components/Testimonials';
 
 function Home() {
+     useEffect(() => {
+    document.title = 'EarthBubs | Home';
+  }, []);
   return (
     <div>
        <section
@@ -48,4 +51,5 @@ function Home() {
 }
 
 export default Home;
+
 
