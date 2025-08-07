@@ -7,6 +7,10 @@ import SoapGrid from "../components/SoapGrid";
 
 const SoapPage = () => {
   const [selectedFilter, setSelectedFilter] = useState(null);
+   useEffect(() => {
+    document.title = 'EarthBubs | Products | Soap';
+  }, []);
+  const [selectedFilter, setSelectedFilter] = useState(null);
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto">
@@ -50,5 +54,6 @@ const SoapPage = () => {
 };
 
 export default SoapPage;
+
 
 
