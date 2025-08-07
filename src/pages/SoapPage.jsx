@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FilterMenu from "../components/FilterMenu";
 import { Link } from "react-router-dom";
 
@@ -53,6 +53,7 @@ const SoapPage = () => {
 };
 
 export default SoapPage;
+
 
 
 
