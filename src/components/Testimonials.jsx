@@ -27,16 +27,17 @@ const Testimonials = () => {
         />
       </div>
 
-      <div className="mt-10 flex justify-center gap-3">
-        <span className="w-2.5 h-2.5 bg-cyan-400 rounded-full"></span>
-        <span className="w-2.5 h-2.5 bg-cyan-100 rounded-full"></span>
-        <span className="w-2.5 h-2.5 bg-cyan-100 rounded-full"></span>
-        <span className="w-2.5 h-2.5 bg-cyan-100 rounded-full"></span>
-        <span className="w-2.5 h-2.5 bg-cyan-100 rounded-full"></span>
+      <div className="mt-10 flex justify-center gap-7">
+        <span className="w-2.5 h-2.5 bg-[#00B4D8] rounded-full"></span>
+        <span className="w-2.5 h-2.5 bg-[#00B4D8] rounded-full"></span>
+        <span className="w-4 h-4 bg-[#00B4D8] border border-black rounded-full"></span>
+        <span className="w-2.5 h-2.5 bg-[#00B4D8] rounded-full"></span>
+        <span className="w-2.5 h-2.5 bg-[#00B4D8] rounded-full"></span>
       </div>
     </section>
   );
 };
 
 export default Testimonials;
+
 
