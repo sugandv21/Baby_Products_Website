@@ -70,7 +70,6 @@ const Login = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-white px-4 py-8 relative">
-      {/* General Modal */}
       {showModal && (
         <div className="absolute inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-8 rounded-lg shadow-md text-center">
@@ -79,7 +78,6 @@ const Login = () => {
         </div>
       )}
 
-      {/* Forgot Password Modal */}
       {showForgotModal && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-md w-full max-w-sm relative">
@@ -119,7 +117,6 @@ const Login = () => {
         </div>
       )}
 
-      {/* Reset Success Modal */}
       {resetSuccess === true && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -129,7 +126,6 @@ const Login = () => {
         </div>
       )}
 
-      {/* Reset Error Modal */}
       {resetSuccess === false && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
@@ -138,7 +134,6 @@ const Login = () => {
         </div>
       )}
 
-      {/* Login UI */}
       <div className="flex flex-col md:flex-row bg-white rounded-[60px] overflow-hidden w-full max-w-6xl">
         {/* Left - Image */}
         <div className="md:w-1/2 w-full">
@@ -149,7 +144,6 @@ const Login = () => {
           />
         </div>
 
-        {/* Right - Form */}
         <div className="md:w-1/2 w-full flex flex-col justify-center px-6 md:px-12 py-10">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Log in</h2>
           <p className="text-sm text-gray-700 mb-8">Enter your details below</p>
@@ -211,3 +205,4 @@ const Login = () => {
 };
 
 export default Login;
+
