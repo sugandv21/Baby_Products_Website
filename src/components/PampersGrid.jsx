@@ -4,13 +4,10 @@ import pampersData from "../data/pampersData";
 
 const PampersGrid = ({ selectedFilter }) => {
   const getFilteredProducts = () => {
-    // Optionally limit to Pampers IDs (e.g., 7–12)
     const pampersOnly = pampersData.filter((p) => p.id >= 101 && p.id <= 106);
 
-    // No filter selected
     if (!selectedFilter) return pampersOnly;
 
-    // Filter by Price range
     if (selectedFilter.includes("Price")) {
       const numbers = selectedFilter.match(/\d+/g);
       if (numbers && numbers.length === 2) {
@@ -20,17 +17,14 @@ const PampersGrid = ({ selectedFilter }) => {
       return pampersOnly;
     }
 
-    // Filter by Free Shipping (example logic)
     if (selectedFilter.includes("Free Shipping")) {
       return pampersOnly.slice(0, 6);
     }
 
-    // Filter by Discounts
     if (selectedFilter.includes("Discounts")) {
       return pampersOnly.filter((p) => p.mrp > p.price);
     }
 
-    // Default return
     return pampersOnly;
   };
 
@@ -50,3 +44,4 @@ const PampersGrid = ({ selectedFilter }) => {
 };
 
 export default PampersGrid;
+
