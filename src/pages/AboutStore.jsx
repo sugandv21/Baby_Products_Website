@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../assets/images/logo.png";
 
 const AboutStore = () => {
+    useEffect(() => {
+    document.title = 'EarthBubs | About Store';
+  }, []);
   return (
     <section className="max-w-6xl mx-auto px-6 py-12 text-gray-800">
       <div className="flex flex-col md:flex-row gap-10 items-start">
@@ -49,4 +52,5 @@ const AboutStore = () => {
 };
 
 export default AboutStore;
+
 
