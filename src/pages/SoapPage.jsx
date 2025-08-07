@@ -6,7 +6,6 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import SoapGrid from "../components/SoapGrid";
 
 const SoapPage = () => {
-  const [selectedFilter, setSelectedFilter] = useState(null);
    useEffect(() => {
     document.title = 'EarthBubs | Products | Soap';
   }, []);
@@ -54,6 +53,7 @@ const SoapPage = () => {
 };
 
 export default SoapPage;
+
 
 
 
