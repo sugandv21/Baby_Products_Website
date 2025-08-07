@@ -1,4 +1,3 @@
-// src/pages/Payment.jsx
 import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
@@ -66,8 +65,6 @@ const Payment = () => {
         <h2 className="text-xl md:text-2xl pl-20 pt-20 font-semibold mb-4">Details</h2>
         <div className="flex flex-col md:flex-row gap-[10em] p-6 md:px-20">
         
-        
-  {/* Left Form Section */}
 <div className="w-full md:w-1/2 space-y-4 border border-[#00b4d8] rounded-lg p-6">
  
 
@@ -108,8 +105,6 @@ const Payment = () => {
   </label>
 </div>
 
-
-  {/* Right Payment Summary Section */}
   <div className="w-full md:w-1/3 h-[65vh] border border-[#00b4d8] rounded-lg px-6 py-8">
     <h2 className="text-lg font-semibold mb-4">Cart Total</h2>
 
@@ -176,3 +171,4 @@ const Payment = () => {
 };
 
 export default Payment;
+
