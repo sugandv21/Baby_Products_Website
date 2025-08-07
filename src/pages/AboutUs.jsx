@@ -39,27 +39,22 @@ const AboutUs = () => {
           <ul className="space-y-3 text-xl">
     
             <li className="flex items-start gap-2">
-              {/* <FaLeaf className="text-green-600 mt-1" /> */}
               🌿
               <span>Natural, safe, and toxin-free ingredients</span>
             </li>
             <li className="flex items-start gap-2">
-              {/* <FaUserMd className="text-red-500 mt-1" /> */}
               🛡️
               <span>Pediatrician & dermatologist approved</span>
             </li>
             <li className="flex items-start gap-2">
-              {/* <FaHeart className="text-pink-500 mt-1" /> */}
               👶
               <span>Designed with real parents in mind</span>
             </li>
             <li className="flex items-start gap-2">
-              {/* <FaGlobe className="text-blue-500 mt-1" /> */}
               🌎
               <span>Eco-conscious and cruelty-free practices</span>
             </li>
             <li className="flex items-start gap-2">
-              {/* <FaSmile className="text-yellow-500 mt-1" /> */}
               ❤
               <span>10,000+ happy families and growing!</span>
             </li>
@@ -71,3 +66,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
