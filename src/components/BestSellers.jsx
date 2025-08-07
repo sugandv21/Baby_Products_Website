@@ -48,12 +48,10 @@ const BestSellers = () => {
   key={product.id}
   className="bg-white shadow-lg hover:shadow-2xl border border-[#00b4d8] rounded-[20px] w-full max-w-[300px] mx-auto relative overflow-hidden min-h-[400px] flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 animate-fadeIn"
 >
-  {/* NEW Tag */}
   <div className="absolute top-0 left-0 bg-[#00b4d8] px-3 py-1 rounded-br-xl text-xs md:text-base font-bold z-10">
     NEW
   </div>
 
-  {/* Product Image */}
   {product.images?.[0] && (
     <img
       src={product.images[0]}
@@ -62,7 +60,6 @@ const BestSellers = () => {
     />
   )}
 
-  {/* Buy Now Button */}
   <div className="absolute bottom-[80px] right-1 z-50">
     <button
       onClick={() => navigate(`/product/${product.id}`)}
@@ -72,20 +69,17 @@ const BestSellers = () => {
     </button>
   </div>
 
-  {/* Bottom Info Box */}
   <div className="bg-[#B0E4F4] p-4 pt-2 clip-slant rounded-b-[20px] relative clip-bend">
     <div className="flex justify-between items-center mb-1">
       <h3 className="font-bold text-lg md:text-xl">{product.title}</h3>
     </div>
 
-    {/* Rating */}
     <div className="flex text-yellow-400 mb-2 text-base md:text-xl">
       {Array.from({ length: 5 }, (_, i) => (
         <FaStar key={i} className={i < product.rating ? "" : "text-white"} />
       ))}
     </div>
 
-    {/* Price Info */}
     <div className="flex items-center gap-2 text-sm md:text-lg font-bold">
       <span className="line-through text-gray-500">MRP ₹{product.mrp}</span>
       <span className="text-black">Price ₹{product.price.toFixed(2)}</span>
@@ -100,3 +94,4 @@ const BestSellers = () => {
 };
 
 export default BestSellers;
+
