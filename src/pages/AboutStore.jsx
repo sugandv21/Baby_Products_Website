@@ -5,7 +5,6 @@ const AboutStore = () => {
   return (
     <section className="max-w-6xl mx-auto px-6 py-12 text-gray-800">
       <div className="flex flex-col md:flex-row gap-10 items-start">
-        {/* Logo and Store Identity */}
         <div className="flex-shrink-0 flex flex-col items-center md:items-start">
           <img
             src={logo}
@@ -15,7 +14,6 @@ const AboutStore = () => {
           <h2 className="text-3xl font-bold">EarthBubs Store</h2>
         </div>
 
-        {/* Store Content */}
         <div className="flex-1">
           <h3 className="text-2xl font-semibold mb-4">Welcome to EarthBubs</h3>
           <p className="text-lg mb-4 leading-relaxed">
@@ -51,3 +49,4 @@ const AboutStore = () => {
 };
 
 export default AboutStore;
+
