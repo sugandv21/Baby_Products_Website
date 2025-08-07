@@ -51,7 +51,6 @@ const ContactPage = () => {
           <Link to="" className="">Contact</Link>
         </div>
       <div className="flex flex-col lg:flex-row gap-1">
-        {/* Left Side Image */}
         <div className="w-full lg:w-[50%]">
           <img
             src={contactImage}
@@ -60,7 +59,6 @@ const ContactPage = () => {
           />
         </div>
 
-        {/* Right Side Form */}
         <form onSubmit={handleSubmit} className="w-full lg:w-[48%] mt-4 lg:mt-10">
           <div className="grid md:grid-cols-2 gap-6">
             <div>
@@ -152,7 +150,6 @@ const ContactPage = () => {
         </form>
       </div>
 
-      {/* Modal */}
       {isSubmitted && (
         <div className="fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50">
           <div className="bg-white p-6 rounded-xl shadow-xl text-center max-w-md w-full">
@@ -172,4 +169,5 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
 
