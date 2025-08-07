@@ -4,6 +4,9 @@ import { Link } from "react-router-dom";
 
 
 const ContactPage = () => {
+  useEffect(() => {
+    document.title = 'EarthBubs | Contact';
+  }, []);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -169,5 +172,6 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
 
 
