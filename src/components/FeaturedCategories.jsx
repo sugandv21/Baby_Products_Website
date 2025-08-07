@@ -43,7 +43,6 @@ const FeaturedCategories = () => {
             key={index}
             className="bg-white min-h-[400px] max-w-[280px] border-2 border-blue-200 rounded-xl shadow-md overflow-hidden flex flex-col items-center relative transition hover:scale-105 duration-300"
           >
-            {/* Product Image */}
             <div className="w-full p-4 my-8">
               <img
                 src={item.image}
@@ -52,7 +51,6 @@ const FeaturedCategories = () => {
               />
             </div>
 
-            {/* Arrow Link */}
             <Link
               to={item.path}
               aria-label={`Go to ${item.title}`}
@@ -61,7 +59,6 @@ const FeaturedCategories = () => {
               <img src={arrow} alt="Navigate" className="w-[95px] h-[95px]" />
             </Link>
 
-            {/* Bottom Info Box with Clip */}
             <div className="w-full bg-[#B0E4F4] flex justify-between items-center px-4 py-5 rounded-b-xl clip-bend1">
               <p className="text-lg md:text-lg font-semibold">{item.title}</p>
             </div>
@@ -73,3 +70,4 @@ const FeaturedCategories = () => {
 };
 
 export default FeaturedCategories;
+
