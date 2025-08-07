@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import contactImage from "../assets/images/contact.png";
 import { Link } from "react-router-dom";
 
@@ -172,6 +172,7 @@ const ContactPage = () => {
 };
 
 export default ContactPage;
+
 
 
 
