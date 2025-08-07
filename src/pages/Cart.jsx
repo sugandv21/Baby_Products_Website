@@ -5,6 +5,9 @@ import { CartContext } from "../context/CartContext";
 import { FaTrash, FaTag } from "react-icons/fa";
 
 const Cart = () => {
+    useEffect(() => {
+    document.title = 'EarthBubs | Cart';
+  }, []);
   const user = JSON.parse(localStorage.getItem("user"));
   const [showModal, setShowModal] = useState(false);
 const [modalMessage, setModalMessage] = useState("");
@@ -184,6 +187,7 @@ const [modalMessage, setModalMessage] = useState("");
 };
 
 export default Cart;
+
 
 
 
