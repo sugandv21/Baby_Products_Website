@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import FilterMenu from "../components/FilterMenu";
 import { Link } from "react-router-dom";
 
@@ -6,6 +6,9 @@ import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import PampersGrid from "../components/PampersGrid";
 
 const Pampers = () => {
+  useEffect(() => {
+    document.title = 'EarthBubs | Products | Pampers';
+  }, []);
   const [selectedFilter, setSelectedFilter] = useState(null);
 
   return (
@@ -50,4 +53,5 @@ const Pampers = () => {
 };
 
 export default Pampers;
+
 
