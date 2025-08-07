@@ -27,7 +27,6 @@ const Testimonials = () => {
         />
       </div>
 
-      {/* Navigation dots */}
       <div className="mt-10 flex justify-center gap-3">
         <span className="w-2.5 h-2.5 bg-cyan-400 rounded-full"></span>
         <span className="w-2.5 h-2.5 bg-cyan-100 rounded-full"></span>
@@ -40,3 +39,4 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
+
