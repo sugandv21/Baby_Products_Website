@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaTruck,
   FaUndo,
@@ -9,6 +9,9 @@ import {
 } from "react-icons/fa";
 
 const ShippingReturns = () => {
+   useEffect(() => {
+    document.title = 'EarthBubs | Shipping & Return Policies';
+  }, []);
   return (
     <section className="max-w-5xl mx-auto px-6 py-12 text-gray-800">
       {/* Page Title */}
@@ -93,3 +96,4 @@ const ShippingReturns = () => {
 };
 
 export default ShippingReturns;
+
