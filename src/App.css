@@ -1,0 +1,22 @@
+.clip-bend {
+  clip-path: polygon(
+    0 0,                      /* Top-left */
+    69% 0,                    /* Shorter horizontal line */
+    calc(63% + 50px) 40px,    /* Slant down to the right */
+    100% 40px,                /* Continue top edge */
+    100% 100%,                /* Bottom-right */
+    0 100%                    /* Bottom-left */
+  );
+}
+
+.clip-bend1 {
+  clip-path: polygon(
+    0 0,                      /* Top-left */
+    75% 0,                    /* Shorter horizontal line */
+    calc(65% + 50px) 40px,    /* Slant down to the right */
+    100% 40px,                /* Continue top edge */
+    100% 100%,                /* Bottom-right */
+    0 100%                    /* Bottom-left */
+  );
+}
+
