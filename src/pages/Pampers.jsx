@@ -10,7 +10,6 @@ const Pampers = () => {
 
   return (
     <div className="px-4 sm:px-6 lg:px-8 py-6 max-w-7xl mx-auto">
-      {/* Breadcrumb + Filter */}
       <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-4 mb-6">
         <div className="text-base sm:text-lg font-medium flex flex-wrap items-center gap-1">
           <Link to="/" className="hover:underline">Home</Link>
@@ -28,10 +27,8 @@ const Pampers = () => {
         </div>
       </div>
 
-      {/* Products */}
       <PampersGrid selectedFilter={selectedFilter} />
 
-      {/* Pagination */}
       <div className="flex flex-wrap justify-center items-center gap-2 mt-10">
         <button className="border p-2 rounded-md text-sm hover:bg-gray-100">
           <FaChevronLeft />
@@ -53,3 +50,4 @@ const Pampers = () => {
 };
 
 export default Pampers;
+
