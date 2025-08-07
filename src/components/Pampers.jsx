@@ -8,7 +8,6 @@ const Pampers = () => {
       
       <div className="flex flex-col lg:flex-row items-start justify-between gap-20 max-w-8xl mx-auto">
         
-        {/* Image and label */}
         <div className="w-full lg:w-1/2">
           <img
             src={pamper} 
@@ -17,7 +16,6 @@ const Pampers = () => {
           />
         </div>
 
-        {/* Text content */}
         <div className="w-full lg:w-1/2 lg:text-left">
           <h3 className="text-5xl font-bold text-gray-900 mb-4">Pampers</h3>
           <p className="text-gray-700 text-2xl mb-6 leading-relaxed">
@@ -37,3 +35,4 @@ const Pampers = () => {
 };
 
 export default Pampers;
+
