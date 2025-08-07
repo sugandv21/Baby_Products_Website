@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import {
   FaBoxOpen,
   FaGift,
@@ -9,6 +9,10 @@ import {
 } from "react-icons/fa";
 
 const BulkCorporate = () => {
+   useEffect(() => {
+    document.title = 'EarthBubs | Bulk Purchase & Corporate Gifts';
+  }, []);
+  
   return (
     <section className="max-w-6xl mx-auto px-6 py-12 text-gray-800">
       <div className="text-center mb-12">
@@ -20,7 +24,6 @@ const BulkCorporate = () => {
         </p>
       </div>
       <div className="grid md:grid-cols-2 gap-10">
-        {/* Bulk Purchase */}
         <div className="border border-cyan-200 rounded-lg p-6 shadow-sm">
           <div className="flex items-center gap-4 mb-4">
             <FaBoxOpen className="text-cyan-600 text-3xl" />
@@ -87,4 +90,5 @@ const BulkCorporate = () => {
 };
 
 export default BulkCorporate;
+
 
