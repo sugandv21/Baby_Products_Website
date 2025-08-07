@@ -4,6 +4,9 @@ import orderImage from '../assets/images/order.png';
 import { Link } from 'react-router-dom';
 
 const OrderComplete = () => {
+  useEffect(() => {
+    document.title = 'EarthBubs | Order Completion';
+  }, []);
   const imageRef = useRef(null);
 
   useEffect(() => {
@@ -63,4 +66,5 @@ const OrderComplete = () => {
 };
 
 export default OrderComplete;
+
 
