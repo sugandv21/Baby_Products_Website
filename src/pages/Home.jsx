@@ -12,15 +12,12 @@ import Testimonials from '../components/Testimonials';
 function Home() {
   return (
     <div>
-      {/* Banner Image Section */}
        <section
   className="relative w-full h-[20vh] md:h-[50vh] lg:h-[80vh] bg-no-repeat bg-cover bg-center"
   style={{ backgroundImage: `url(${banner})` }}
 >
-  {/* Optional dark overlay for text readability */}
   <div className="absolute inset-0 z-0" />
 
-  {/* Text content */}
   <div className="relative z-10 flex flex-col justify-center h-full px-6 md:px-20">
     <h1 className="text-lg md:text-3xl lg:text-5xl font-semibold text-white mb-2 md:mb-10">
       Gentle Care for Growing Joy
@@ -34,7 +31,6 @@ function Home() {
 
 
 
-      {/* Featured Categories Section */}
       <FeaturedCategories />
       <TrustSection />
       <BestSellers />
@@ -52,3 +48,4 @@ function Home() {
 }
 
 export default Home;
+
