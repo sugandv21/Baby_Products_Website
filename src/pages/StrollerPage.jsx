@@ -28,10 +28,8 @@ const StrollerPage = () => {
         </div>
       </div>
 
-      {/* Products */}
       <StrollerGrid selectedFilter={selectedFilter} />
 
-      {/* Pagination */}
       <div className="flex flex-wrap justify-center items-center gap-2 mt-10">
         <button className="border p-2 rounded-md text-sm hover:bg-gray-100">
           <FaChevronLeft />
@@ -53,3 +51,4 @@ const StrollerPage = () => {
 };
 
 export default StrollerPage;
+
