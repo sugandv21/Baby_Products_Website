@@ -4,13 +4,10 @@ import strollerData from "../data/strollerData";
 
 const StollerGrid = ({ selectedFilter }) => {
   const getFilteredProducts = () => {
-    // Optionally limit to Pampers IDs (e.g., 7–12)
     const pampersOnly = strollerData.filter((p) => p.id >= 501 && p.id <= 506);
 
-    // No filter selected
     if (!selectedFilter) return pampersOnly;
 
-    // Filter by Price range
     if (selectedFilter.includes("Price")) {
       const numbers = selectedFilter.match(/\d+/g);
       if (numbers && numbers.length === 2) {
@@ -20,17 +17,14 @@ const StollerGrid = ({ selectedFilter }) => {
       return pampersOnly;
     }
 
-    // Filter by Free Shipping (example logic)
     if (selectedFilter.includes("Free Shipping")) {
       return pampersOnly.slice(0, 6);
     }
 
-    // Filter by Discounts
     if (selectedFilter.includes("Discounts")) {
       return pampersOnly.filter((p) => p.mrp > p.price);
     }
 
-    // Default return
     return pampersOnly;
   };
 
@@ -50,3 +44,4 @@ const StollerGrid = ({ selectedFilter }) => {
 };
 
 export default StollerGrid;
+
