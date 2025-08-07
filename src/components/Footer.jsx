@@ -6,7 +6,6 @@ const Footer = () => {
   return (
     <footer className="bg-[#b0e4f4] text-black text-sm md:text-base">
       <div className="container mx-auto px-4 py-6 grid grid-cols-1 md:grid-cols-4 gap-10">
-        {/* KNOW */}
         <div>
           <h3 className="uppercase font-semibold border-b border-black pb-1 mb-3">Know</h3>
           <ul className="space-y-2">
@@ -22,7 +21,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* TERMS & CONDITIONS */}
         <div>
           <h3 className="uppercase font-semibold border-b border-black pb-1 mb-3">Terms & Conditions</h3>
           <ul className="space-y-2">
@@ -38,7 +36,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* CONTACT US */}
         <div>
           <h3 className="uppercase font-semibold border-b border-black pb-1 mb-3">Contact Us</h3>
           <ul className="space-y-2">
@@ -61,7 +58,6 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* FOLLOW US */}
         <div>
           <h3 className="uppercase font-semibold border-b border-black pb-1 mb-3">Follow Us</h3>
           <div className="flex space-x-4 mt-4">
@@ -88,3 +84,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
