@@ -11,7 +11,6 @@ import {
 const BulkCorporate = () => {
   return (
     <section className="max-w-6xl mx-auto px-6 py-12 text-gray-800">
-      {/* Page Title */}
       <div className="text-center mb-12">
         <h1 className="text-3xl md:text-4xl font-bold text-cyan-800">
           Bulk Purchase & Corporate Gifts
@@ -20,8 +19,6 @@ const BulkCorporate = () => {
           Ideal solutions for businesses, institutions, and bulk gifting needs.
         </p>
       </div>
-
-      {/* Info Grid */}
       <div className="grid md:grid-cols-2 gap-10">
         {/* Bulk Purchase */}
         <div className="border border-cyan-200 rounded-lg p-6 shadow-sm">
@@ -36,7 +33,6 @@ const BulkCorporate = () => {
           </p>
         </div>
 
-        {/* Corporate Gifts */}
         <div className="border border-cyan-200 rounded-lg p-6 shadow-sm">
           <div className="flex items-center gap-4 mb-4">
             <FaGift className="text-cyan-600 text-3xl" />
@@ -49,7 +45,6 @@ const BulkCorporate = () => {
           </p>
         </div>
 
-        {/* Partnership Opportunity */}
         <div className="border border-cyan-200 rounded-lg p-6 shadow-sm">
           <div className="flex items-center gap-4 mb-4">
             <FaHandshake className="text-cyan-600 text-3xl" />
@@ -60,8 +55,6 @@ const BulkCorporate = () => {
             maternity benefits, and wellness gifting. Let's build something meaningful together!
           </p>
         </div>
-
-        {/* Custom Solutions */}
         <div className="border border-cyan-200 rounded-lg p-6 shadow-sm">
           <div className="flex items-center gap-4 mb-4">
             <FaBuilding className="text-cyan-600 text-3xl" />
@@ -94,3 +87,4 @@ const BulkCorporate = () => {
 };
 
 export default BulkCorporate;
+
