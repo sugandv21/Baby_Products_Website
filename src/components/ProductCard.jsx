@@ -13,12 +13,10 @@ const ProductCard = ({ product }) => {
   return (
     <div className="bg-white shadow-md border rounded-2xl w-[300px] relative overflow-hidden min-h-[400px] transform transition duration-300 hover:scale-105 hover:shadow-lg">
 
-      {/* NEW Tag */}
       <div className="absolute top-0 left-0 bg-[#00B4D8] px-3 py-1 rounded-br-xl text-xs sm:text-sm lg:text-base font-bold z-10">
         NEW
       </div>
 
-      {/* Product Image */}
       {product.images?.length > 0 && (
         <img
           src={product.images[0]}
@@ -27,7 +25,6 @@ const ProductCard = ({ product }) => {
         />
       )}
 
-      {/* Buy Now Button */}
       <div className="absolute bottom-[95px] right-1 z-50">
         <button 
           onClick={handleBuyClick} 
@@ -38,12 +35,10 @@ const ProductCard = ({ product }) => {
         </button>
       </div>
 
-      {/* Bottom Info Box */}
       <div className="relative bg-[#B0E4F4] p-4 pt-5 rounded-b-2xl clip-bend">
-        {/* Title */}
+
         <h2 className="font-bold text-base sm:text-lg lg:text-2xl mb-1">{product.title}</h2>
 
-        {/* Rating */}
         <div className="flex text-yellow-200 my-2 text-sm sm:text-base lg:text-xl">
           {Array.from({ length: 5 }, (_, i) => (
             <FaStar
@@ -53,7 +48,6 @@ const ProductCard = ({ product }) => {
           ))}
         </div>
 
-        {/* Price Row */}
         <div className="flex items-center gap-4">
           <div className="text-xs sm:text-sm lg:text-base text-gray-600 line-through font-bold">
             MRP ₹{product.mrp}
@@ -68,3 +62,4 @@ const ProductCard = ({ product }) => {
 };
 
 export default ProductCard;
+
