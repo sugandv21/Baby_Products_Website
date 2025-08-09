@@ -3,12 +3,13 @@ import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
 import offersData from "../data/offersData";
-import pampersData from "../data/pampersData";
-import girlsfasData from "../data/girlsfasData";
-import soapData from "../data/soapData";
-import strollerData from "../data/strollerData";
-import bottleData from "../data/bottleData";
-import boysfasData from "../data/boysfasData";
+// import pampersData from "../data/pampersData";
+// import girlsfasData from "../data/girlsfasData";
+// import soapData from "../data/soapData";
+// import strollerData from "../data/strollerData";
+// import bottleData from "../data/bottleData";
+// import boysfasData from "../data/boysfasData";
+import { pampersData, boysfasData, girlsfasData, soapData, strollerData, bottleData } from "../data/products";
 import deliveryIcon from "../assets/images/delivery.png";
 import returnIcon from "../assets/images/return.png";
 import { CartContext } from "../context/CartContext";
@@ -21,7 +22,7 @@ const ProductDetail = () => {
   const { addToCart } = useContext(CartContext);
 
   const { id } = useParams();
-  const allProducts = [...offersData, ...pampersData, ...girlsfasData, ...boysfasData, ...soapData, ...strollerData, ...bottleData];
+  const allProducts = [...offersData, ...pampersData, ...boysfasData, ...girlsfasData, ...soapData, ...strollerData, ...bottleData];
   const product = allProducts.find((p) => p.id === parseInt(id));
   const [mainImage, setMainImage] = useState(product.images[0]);
   const [quantity, setQuantity] = useState(1);
@@ -228,4 +229,5 @@ const ProductDetail = () => {
 };
 
 export default ProductDetail;
+
 
