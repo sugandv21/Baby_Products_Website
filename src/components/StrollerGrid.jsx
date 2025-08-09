@@ -1,31 +1,31 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import strollerData from "../data/strollerData";
+import { strollerData } from "../data/products";
 
-const StollerGrid = ({ selectedFilter }) => {
+const StrollerGrid = ({ selectedFilter }) => {
   const getFilteredProducts = () => {
-    const pampersOnly = strollerData.filter((p) => p.id >= 501 && p.id <= 506);
+    const products = strollerData.filter((p) => p.id >= 501 && p.id <= 506);
 
-    if (!selectedFilter) return pampersOnly;
+    if (!selectedFilter) return products;
 
     if (selectedFilter.includes("Price")) {
       const numbers = selectedFilter.match(/\d+/g);
       if (numbers && numbers.length === 2) {
-        const [min, max] = numbers.map((num) => parseInt(num));
-        return pampersOnly.filter((p) => p.price >= min && p.price <= max);
+        const [min, max] = numbers.map(Number);
+        return products.filter((p) => p.price >= min && p.price <= max);
       }
-      return pampersOnly;
+      return products;
     }
 
     if (selectedFilter.includes("Free Shipping")) {
-      return pampersOnly.slice(0, 6);
+      return products.slice(0, 6);
     }
 
     if (selectedFilter.includes("Discounts")) {
-      return pampersOnly.filter((p) => p.mrp > p.price);
+      return products.filter((p) => p.mrp > p.price);
     }
 
-    return pampersOnly;
+    return products;
   };
 
   const filtered = getFilteredProducts();
@@ -43,5 +43,4 @@ const StollerGrid = ({ selectedFilter }) => {
   );
 };
 
-export default StollerGrid;
-
+export default StrollerGrid;
