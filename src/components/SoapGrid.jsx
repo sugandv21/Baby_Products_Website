@@ -1,31 +1,31 @@
 import React from "react";
 import ProductCard from "./ProductCard";
-import soapData from "../data/soapData";
+import { soapData } from "../data/products";
 
 const SoapGrid = ({ selectedFilter }) => {
   const getFilteredProducts = () => {
-    const pampersOnly = soapData.filter((p) => p.id >= 401 && p.id <= 406);
+    const soapOnly = soapData.filter((p) => p.id >= 401 && p.id <= 406);
 
-    if (!selectedFilter) return pampersOnly;
+    if (!selectedFilter) return soapOnly;
 
     if (selectedFilter.includes("Price")) {
       const numbers = selectedFilter.match(/\d+/g);
       if (numbers && numbers.length === 2) {
-        const [min, max] = numbers.map((num) => parseInt(num));
-        return pampersOnly.filter((p) => p.price >= min && p.price <= max);
+        const [min, max] = numbers.map(Number);
+        return soapOnly.filter((p) => p.price >= min && p.price <= max);
       }
-      return pampersOnly;
+      return soapOnly;
     }
 
     if (selectedFilter.includes("Free Shipping")) {
-      return pampersOnly.slice(0, 6);
+      return soapOnly.slice(0, 6);
     }
 
     if (selectedFilter.includes("Discounts")) {
-      return pampersOnly.filter((p) => p.mrp > p.price);
+      return soapOnly.filter((p) => p.mrp > p.price);
     }
 
-    return pampersOnly;
+    return soapOnly;
   };
 
   const filtered = getFilteredProducts();
@@ -44,4 +44,3 @@ const SoapGrid = ({ selectedFilter }) => {
 };
 
 export default SoapGrid;
-
