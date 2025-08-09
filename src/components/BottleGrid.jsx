@@ -1,34 +1,34 @@
-import React from "react";
+import React, { useMemo } from "react";
 import ProductCard from "./ProductCard";
-import bottleData from "../data/bottleData";
+import { bottleData } from "../data/products";
 
-const StollerGrid = ({ selectedFilter }) => {
+const BottleGrid = ({ selectedFilter }) => {
   const getFilteredProducts = () => {
-    const pampersOnly = bottleData.filter((p) => p.id >= 601 && p.id <= 606);
+    const products = bottleData.filter((p) => p.id >= 601 && p.id <= 606);
 
-    if (!selectedFilter) return pampersOnly;
+    if (!selectedFilter) return products;
 
     if (selectedFilter.includes("Price")) {
       const numbers = selectedFilter.match(/\d+/g);
       if (numbers && numbers.length === 2) {
-        const [min, max] = numbers.map((num) => parseInt(num));
-        return pampersOnly.filter((p) => p.price >= min && p.price <= max);
+        const [min, max] = numbers.map(Number);
+        return products.filter((p) => p.price >= min && p.price <= max);
       }
-      return pampersOnly;
+      return products;
     }
 
     if (selectedFilter.includes("Free Shipping")) {
-      return pampersOnly.slice(0, 6);
+      return products.slice(0, 6);
     }
 
     if (selectedFilter.includes("Discounts")) {
-      return pampersOnly.filter((p) => p.mrp > p.price);
+      return products.filter((p) => p.mrp > p.price);
     }
 
-    return pampersOnly;
+    return products;
   };
 
-  const filtered = getFilteredProducts();
+  const filtered = useMemo(() => getFilteredProducts(), [selectedFilter]);
 
   return (
     <div className="flex flex-wrap justify-center gap-28 my-14">
@@ -43,5 +43,4 @@ const StollerGrid = ({ selectedFilter }) => {
   );
 };
 
-export default StollerGrid;
-
+export default BottleGrid;
