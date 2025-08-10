@@ -20,6 +20,8 @@ const productRoutes = [
 
 
 const Navbar = () => {
+  
+   const isProductsActive = location.pathname.startsWith("/products");
   const dropdownRef = useRef(null);
   
   const { cartItems } = useContext(CartContext);
@@ -197,7 +199,7 @@ const navLinkClass = ({ isActive }) =>
 
             {/* Products dropdown */}
             <div className="relative" ref={productsRef}>
-      <button
+{/*       <button
         onClick={() => setShowProducts((s) => !s)}
         aria-expanded={showProducts}
         aria-haspopup="menu"
@@ -205,7 +207,20 @@ const navLinkClass = ({ isActive }) =>
         type="button"
       >
         Products
-      </button>
+      </button> */}
+              <button
+      onClick={() => setShowProducts((s) => !s)}
+      aria-expanded={showProducts}
+      aria-haspopup="menu"
+      className={`py-1 ${
+        isProductsActive
+          ? "bg-cyan-100 border-b-4 border-[#00B4D8] pb-2"
+          : "hover:bg-cyan-100 hover:border-b-4 hover:border-[#00B4D8] hover:pb-2"
+      }`}
+      type="button"
+    >
+      Products
+    </button>
       {showProducts && (
         <div className="absolute top-full mt-2 border rounded shadow w-52 z-50 bg-[#B0E4F4]">
           <div className="flex flex-col gap-y-1 py-1 bg-[#boe4f4] border">
@@ -516,4 +531,5 @@ const navLinkClass = ({ isActive }) =>
 };
 
 export default Navbar;
+
 
