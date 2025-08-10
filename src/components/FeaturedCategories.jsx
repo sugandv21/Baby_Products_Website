@@ -54,7 +54,7 @@ const FeaturedCategories = () => {
             <Link
               to={item.path}
               aria-label={`Go to ${item.title}`}
-              className="absolute top-[328px] -right-[35px] z-50 p-2 hover:scale-110 transition-transform duration-200"
+              className="absolute top-[328px] -right-[35px] z-10 p-2 hover:scale-110 transition-transform duration-200"
             >
               <img src={arrow} alt="Navigate" className="w-[95px] h-[95px]" />
             </Link>
@@ -70,4 +70,5 @@ const FeaturedCategories = () => {
 };
 
 export default FeaturedCategories;
+
 
